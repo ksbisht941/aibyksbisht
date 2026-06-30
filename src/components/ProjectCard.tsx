@@ -23,7 +23,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
 
       <div className="relative overflow-hidden rounded-[1.25rem] bg-[#111] shadow-[0_6px_28px_rgba(35,29,16,0.035)] transition duration-300 h-full border border-white/10">
         <div className="relative aspect-[4/5] overflow-hidden flex flex-col justify-end">
-          
+
           {/* Background Thumbnail */}
           {project.thumbnail && (
             <Image
@@ -39,7 +39,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
           <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent pointer-events-none"></div>
 
           {/* Content overlayed at bottom */}
-          <div className="relative z-10 p-6 md:p-8 flex flex-col justify-end h-full">
+          <div className="relative z-1 p-6 md:p-8 flex flex-col justify-end h-full">
             <div className="mt-auto">
               <h3 className="text-2xl font-bold tracking-tight text-white mb-2 drop-shadow-lg">
                 {project.title}

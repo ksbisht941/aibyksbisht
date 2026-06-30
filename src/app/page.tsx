@@ -68,7 +68,13 @@ export default function Home() {
   return (
     <main>
       {/* Marquee */}
-      <div className="marquee-viewport -mx-6 hidden overflow-hidden py-1 sm:-mx-10 sm:block lg:-mx-14 2xl:-mx-16 border-b border-[var(--sidebar-border)] mb-10">
+      <div
+        className="marquee-viewport -mx-6 hidden overflow-hidden py-1 sm:-mx-10 sm:block lg:-mx-14 2xl:-mx-16 mb-20"
+        style={{
+          WebkitMaskImage: 'linear-gradient(90deg, #0000 0, #000 5rem calc(100% - 5rem), #0000 100%)',
+          maskImage: 'linear-gradient(90deg, #0000 0, #000 5rem calc(100% - 5rem), #0000 100%)'
+        }}
+      >
         <div className="marquee-track flex min-w-max text-lg font-semibold tracking-[-0.045em] text-black/20 sm:text-2xl">
           <div className="flex shrink-0 gap-7 pr-7">
             {["PyTorch", "Python", "AWS", "Docker", "MLOps", "RAG", "Next.js", "Angular", "PostgreSQL", "PyTorch", "Python", "AWS", "Docker", "MLOps", "RAG", "Next.js", "Angular", "PostgreSQL"].map((tech, i) => (
@@ -125,7 +131,7 @@ export default function Home() {
               <FadeIn delay={0.8} className="absolute -top-6 md:-top-5 left-[40%] hidden sm:block z-20">
                 {mounted && (
                   <motion.div
-                    className="bg-[#cddc39] text-[#33691e] px-3 py-1 md:px-4 md:py-1.5 rounded-full font-bold shadow-sm text-[10px] md:text-sm border border-black/10 rotate-6"
+                    className="bg-[#cddc39] text-[#33691e] px-3 py-1 md:px-4 md:py-1.5 rounded-full font-bold text-[10px] md:text-sm border border-black/10 rotate-6"
                     style={{ x: x1, y: y1 }}
                   >
                     PYTORCH
@@ -135,7 +141,7 @@ export default function Home() {
               <FadeIn delay={0.9} className="absolute top-[10%] right-8 md:right-20 hidden sm:block z-20">
                 {mounted && (
                   <motion.div
-                    className="bg-[#d1c4e9] text-[#311b92] px-3 py-1 md:px-4 md:py-1.5 rounded-full font-bold shadow-sm text-[10px] md:text-sm border border-black/10 -rotate-3"
+                    className="bg-[#d1c4e9] text-[#311b92] px-3 py-1 md:px-4 md:py-1.5 rounded-full font-bold text-[10px] md:text-sm border border-black/10 -rotate-3"
                     style={{ x: x2, y: y2 }}
                   >
                     TRANSFORMERS
@@ -145,7 +151,7 @@ export default function Home() {
               <FadeIn delay={1.0} className="absolute top-[45%] right-2 md:right-12 hidden sm:block z-20">
                 {mounted && (
                   <motion.div
-                    className="bg-[#fff59d] text-[#f57f17] px-3 py-1 md:px-4 md:py-1.5 rounded-full font-bold shadow-sm text-[10px] md:text-sm border border-black/10 rotate-12"
+                    className="bg-[#fff59d] text-[#f57f17] px-3 py-1 md:px-4 md:py-1.5 rounded-full font-bold text-[10px] md:text-sm border border-black/10 rotate-12"
                     style={{ x: x3, y: y3 }}
                   >
                     RAG ARCHITECT
@@ -155,7 +161,7 @@ export default function Home() {
               <FadeIn delay={1.1} className="absolute -bottom-[10%] -left-6 md:-left-12 hidden sm:block z-20">
                 {mounted && (
                   <motion.div
-                    className="bg-[#4dd0e1] text-[#006064] px-3 py-1 md:px-4 md:py-1.5 rounded-full font-bold shadow-sm text-[10px] md:text-sm border border-black/10 -rotate-12"
+                    className="bg-[#4dd0e1] text-[#006064] px-3 py-1 md:px-4 md:py-1.5 rounded-full font-bold text-[10px] md:text-sm border border-black/10 -rotate-12"
                     style={{ x: x4, y: y4 }}
                   >
                     CNNs
@@ -165,7 +171,7 @@ export default function Home() {
               <FadeIn delay={1.2} className="absolute -bottom-6 md:-bottom-10 right-[20%] hidden sm:block z-20">
                 {mounted && (
                   <motion.div
-                    className="bg-[#ff8a80] text-[#b71c1c] px-3 py-1 md:px-4 md:py-1.5 rounded-full font-bold shadow-sm text-[10px] md:text-sm border border-black/10 rotate-3"
+                    className="bg-[#ff8a80] text-[#b71c1c] px-3 py-1 md:px-4 md:py-1.5 rounded-full font-bold text-[10px] md:text-sm border border-black/10 rotate-3"
                     style={{ x: x5, y: y5 }}
                   >
                     FOUNDING ENGINEER
@@ -175,7 +181,7 @@ export default function Home() {
               {/* <FadeIn delay={1.3} className="absolute top-[30%] -left-8 md:-left-16 hidden sm:block z-20">
                 {mounted && (
                   <motion.div
-                    className="bg-[#f8bbd0] text-[#880e4f] px-3 py-1 md:px-4 md:py-1.5 rounded-full font-bold shadow-sm text-[10px] md:text-sm border border-black/10 -rotate-6"
+                    className="bg-[#f8bbd0] text-[#880e4f] px-3 py-1 md:px-4 md:py-1.5 rounded-full font-bold text-[10px] md:text-sm border border-black/10 -rotate-6"
                     style={{ x: x6, y: y6 }}
                   >
                     LANGCHAIN
@@ -323,26 +329,24 @@ export default function Home() {
       </section>
 
       {/* Connect Section */}
-      <section id="connect" className="py-24 lg:py-32 border-t border-[var(--sidebar-border)]">
+      <section id="connect" className="pt-24 pb-12 lg:pt-32 lg:pb-16 mt-12 border-t border-[var(--sidebar-border)]">
         <FadeIn delay={0.1}>
-          <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-black/40 mb-6">Connect</p>
-          <h2 className="text-5xl md:text-7xl lg:text-[7rem] font-black uppercase leading-[0.92] tracking-[-0.06em] text-[#151515] mb-12">
-            Let&apos;s work <br />
-            <span className="font-serif italic font-medium normal-case">together</span>
+          <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-[#888] mb-8">Contact</p>
+          <h2 className="mt-6 max-w-4xl text-5xl font-semibold leading-[0.92] tracking-[-0.075em] sm:text-7xl mb-10">
+            Let&apos;s connect if you want to dive deeper.
           </h2>
-          <div className="flex flex-wrap gap-4 md:gap-8">
-            <a href="mailto:contact@example.com" className="group flex items-center text-xl md:text-3xl font-semibold tracking-tight transition-colors">
-              Email
-              <ArrowUpRight className="ml-2 w-6 h-6 opacity-0 -translate-x-2 translate-y-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 transition-all" />
+          <div className="flex flex-wrap gap-4 mb-32">
+            <a href="mailto:contact@example.com" className="inline-flex items-center justify-center rounded-full bg-[#111] text-white px-8 py-3 text-[14px] font-semibold transition-transform hover:scale-105">
+              Say Hi
             </a>
-            <a href="https://www.linkedin.com/in/kuldeep-s-bisht/" target="_blank" rel="noreferrer" className="group flex items-center text-xl md:text-3xl font-semibold tracking-tight transition-colors">
+            <a href="https://www.linkedin.com/in/kuldeep-s-bisht/" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center rounded-full bg-white border border-black/10 text-[#111] px-8 py-3 text-[14px] font-semibold transition-all hover:bg-[#fafafa] hover:border-black/20 hover:scale-105">
               LinkedIn
-              <ArrowUpRight className="ml-2 w-6 h-6 opacity-0 -translate-x-2 translate-y-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 transition-all" />
             </a>
-            <a href="https://github.com/ksbisht941" target="_blank" rel="noreferrer" className="group flex items-center text-xl md:text-3xl font-semibold tracking-tight transition-colors">
-              GitHub
-              <ArrowUpRight className="ml-2 w-6 h-6 opacity-0 -translate-x-2 translate-y-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 transition-all" />
-            </a>
+          </div>
+
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 text-[12px] text-[#888] font-medium">
+            <p>© {new Date().getFullYear()} Kuldeep Singh Bisht</p>
+            <p>AI / ML Engineer · Data Scientist · RAG Architect</p>
           </div>
         </FadeIn>
       </section>

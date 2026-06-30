@@ -61,6 +61,10 @@ export function Sidebar() {
             GitHub
             <ArrowUpRight className="w-3.5 h-3.5" />
           </a>
+          <a href="#" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-[11px] font-semibold uppercase tracking-[0.16em] transition text-black/45 hover:text-black">
+            Resume
+            <ArrowUpRight className="w-3.5 h-3.5" />
+          </a>
         </div>
         <p className="hidden text-[11px] leading-5 md:block text-black/35">
           © {new Date().getFullYear()}<br />
