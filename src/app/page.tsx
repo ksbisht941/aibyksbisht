@@ -336,7 +336,7 @@ export default function Home() {
             Let&apos;s connect if you want to dive deeper.
           </h2>
           <div className="flex flex-wrap gap-4 mb-32">
-            <a href="mailto:contact@example.com" className="inline-flex items-center justify-center rounded-full bg-[#111] text-white px-8 py-3 text-[14px] font-semibold transition-transform hover:scale-105">
+            <a href="mailto:ksbisht941@gmail.com" className="inline-flex items-center justify-center rounded-full bg-[#111] text-white px-8 py-3 text-[14px] font-semibold transition-transform hover:scale-105">
               Say Hi
             </a>
             <a href="https://www.linkedin.com/in/kuldeep-s-bisht/" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center rounded-full bg-white border border-black/10 text-[#111] px-8 py-3 text-[14px] font-semibold transition-all hover:bg-[#fafafa] hover:border-black/20 hover:scale-105">

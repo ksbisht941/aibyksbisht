@@ -12,10 +12,10 @@ export function Sidebar() {
       <div>
         <nav className="flex items-center justify-between gap-4 text-sm font-medium">
           <Link href="/" className="block font-bold text-lg tracking-tight">
-            KSB.
+            KSBisht.
           </Link>
           <div className="flex items-center gap-4">
-            <a href="mailto:contact@example.com" className="inline-flex shrink-0 items-center gap-1.5 rounded-full px-3 py-1.5 text-[11px] font-medium transition hover:-translate-y-0.5 bg-black/5 text-black/60 hover:bg-black/10 hover:text-black">
+            <a href="mailto:ksbisht941@gmail.com" className="inline-flex shrink-0 items-center gap-1.5 rounded-full px-3 py-1.5 text-[11px] font-medium transition hover:-translate-y-0.5 bg-black/5 text-black/60 hover:bg-black/10 hover:text-black">
               <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" aria-hidden="true"></span>
               Available to connect
             </a>
