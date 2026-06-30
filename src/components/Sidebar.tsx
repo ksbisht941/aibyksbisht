@@ -53,7 +53,7 @@ export function Sidebar() {
 
       <div className="mt-8 flex flex-col gap-8 md:mt-0">
         <div className="flex flex-wrap gap-x-4 gap-y-2 md:flex-col md:items-start md:gap-4">
-          <a href="#" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-[11px] font-semibold uppercase tracking-[0.16em] transition text-black/45 hover:text-black">
+          <a href="https://drive.google.com/drive/folders/1x3ZKJHRNT0e8wsiKVowoRuEhHSvtFbO2?usp=sharing" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-[11px] font-semibold uppercase tracking-[0.16em] transition text-black/45 hover:text-black">
             About Me
             <ArrowUpRight className="w-3.5 h-3.5" />
           </a>
