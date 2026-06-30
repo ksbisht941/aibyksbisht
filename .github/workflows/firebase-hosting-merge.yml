@@ -29,7 +29,9 @@ jobs:
           projectId: aibyksbisht
 
       - name: Send Email on Failure
-        if: failure()
+        if: failure() && env.MAIL_TO != ''
+        env:
+          MAIL_TO: '${{ secrets.MAIL_TO_ADDRESS }}'
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
