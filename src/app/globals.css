@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-serif);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  
+  --sidebar-bg: #f6f6f6;
+  --sidebar-border: rgba(0, 0, 0, 0.08);
+  
+  --muted: rgba(0, 0, 0, 0.55);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+* {
+  cursor: none !important;
+}
+
+::selection {
+  background: #171717;
+  color: #fff;
+}
+
+/* Marquee Animation */
+.marquee-track {
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Card Glow Variables */
+.glow-card {
+  --card-hover: #151515;
+  --card-glow: rgba(0, 0, 0, 0.22);
+}
+
+.glow-card:nth-child(2n) {
+  --card-hover: #dfeaf4;
+  --card-glow: rgba(92, 142, 183, 0.24);
+}
+
+.glow-card:nth-child(3n) {
+  --card-hover: #eaffab;
+  --card-glow: rgba(127, 180, 70, 0.18);
+}
