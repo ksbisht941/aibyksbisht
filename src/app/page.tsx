@@ -67,7 +67,7 @@ export default function Home() {
       </div>
       <div
         aria-hidden="true"
-        className="marquee-viewport -mx-6 overflow-hidden py-1 sm:-mx-10 lg:-mx-14 2xl:-mx-16 mb-20"
+        className="marquee-viewport -mx-6 overflow-hidden py-1 sm:-mx-10 lg:-mx-14 2xl:-mx-16 mb-8 sm:mb-12"
         style={{
           WebkitMaskImage:
             "linear-gradient(90deg, #0000 0, #000 5rem calc(100% - 5rem), #0000 100%)",
@@ -133,12 +133,12 @@ export default function Home() {
       {/* Hero */}
       <section
         id="about"
-        className="flex min-h-[calc(100vh-200px)] items-center py-14 lg:py-16 relative"
+        className="flex min-h-[50vh] md:min-h-[calc(100vh-200px)] items-center pt-8 pb-14 md:py-14 lg:py-16 relative"
       >
-        <div className="w-full pb-[12vh]">
+        <div className="w-full pb-[8vh] md:pb-[12vh]">
           <div className="relative max-w-[920px]">
             <FadeIn delay={0.1}>
-              <div className="mb-6 flex flex-col gap-1.5">
+              <div className="mb-6 flex flex-col gap-1.5 -ml-[2px] sm:-ml-[3px]">
                 <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-black/40">
                   {mounted ? getGreeting() : "Hello"}— I&apos;m Kuldeep
                 </p>

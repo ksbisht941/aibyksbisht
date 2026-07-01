@@ -28,6 +28,7 @@ export function ExperienceSection() {
                       src="/logo/visa2fly-logo.jpeg"
                       alt="Visa2Fly Logo"
                       fill
+                      loading="lazy"
                       className="object-contain rounded-xl"
                     />
                   </div>
