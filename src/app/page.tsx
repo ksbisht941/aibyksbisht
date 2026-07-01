@@ -1,15 +1,12 @@
 "use client";
 
-import Image from "next/image";
 import { FadeIn } from "@/components/FadeIn";
 import { ProjectCard } from "@/components/ProjectCard";
-import { ScrollButton } from "@/components/ScrollButton";
 import { ExperienceSection } from "@/components/ExperienceSection";
 import { ConnectSection } from "@/components/ConnectSection";
 import { projects } from "@/lib/data";
-import { ArrowUpRight } from "lucide-react";
-import { motion, useMotionValue, useSpring, useTransform, useScroll } from "framer-motion";
-import { useEffect, useState, useRef } from "react";
+import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const getGreeting = () => {
   const hour = new Date().getHours();
@@ -17,6 +14,13 @@ const getGreeting = () => {
   if (hour < 17) return "Good afternoon";
   if (hour < 21) return "Good evening";
   return "Good night";
+};
+
+const getYearsOfExperience = () => {
+  const start = new Date(2019, 6); // July 2019
+  const now = new Date();
+  const diff = now.getTime() - start.getTime();
+  return Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
 };
 
 export default function Home() {
@@ -44,10 +48,8 @@ export default function Home() {
   const x5 = useTransform(smoothMouseX, [0, 1500], [25, -25]);
   const y5 = useTransform(smoothMouseY, [0, 900], [20, -20]);
 
-  const x6 = useTransform(smoothMouseX, [0, 1500], [-25, 25]);
-  const y6 = useTransform(smoothMouseY, [0, 900], [-20, 20]);
-
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
     const handleMouseMove = (e: MouseEvent) => {
       mouseX.set(e.clientX);
@@ -148,7 +150,8 @@ export default function Home() {
                 className="font-black uppercase leading-[1.01] tracking-[-0.04em] text-[#151515] text-[42px] sm:text-[56px] md:text-[68px] relative"
                 style={{ WebkitTextStroke: "2px #ffffff", paintOrder: "stroke" }}
               >
-                <span>7+ YEARS </span>
+                <span className="text-gradient-hover">{mounted ? getYearsOfExperience() : 7}+</span>
+                <span> YEARS </span>
                 <span className="relative z-10 font-medium normal-case italic tracking-[-0.02em] -ml-[0.25em] font-serif text-black/90">
                   architecting
                 </span>
@@ -267,7 +270,7 @@ export default function Home() {
         <div className="grid w-full gap-5 [grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))] lg:gap-6 2xl:gap-7">
           {projects.map((project, i) => (
             <FadeIn key={project.id} delay={0.2 + i * 0.1}>
-              <ProjectCard project={project} index={i} />
+              <ProjectCard project={project} />
             </FadeIn>
           ))}
         </div>

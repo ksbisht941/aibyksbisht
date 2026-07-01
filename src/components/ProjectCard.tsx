@@ -1,15 +1,13 @@
 "use client";
 
 import { Project } from "@/lib/data";
-import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 interface ProjectCardProps {
   project: Project;
-  index: number;
 }
 
-export function ProjectCard({ project, index }: ProjectCardProps) {
+export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <a
       id={project.id}

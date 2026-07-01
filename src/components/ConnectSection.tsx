@@ -7,12 +7,12 @@ export function ConnectSection() {
       <FadeIn>
         <div className="max-w-2xl">
           <h2 className="text-4xl font-semibold tracking-[-0.06em] sm:text-5xl mb-6 text-black/90">
-            Let's build something{" "}
+            Let&apos;s build something{" "}
             <span className="italic font-serif text-black/70">extraordinary</span> together.
           </h2>
           <p className="text-[15px] leading-relaxed text-black/60 mb-10 max-w-lg">
-            I'm currently open for new opportunities. Whether you have a question or just want to
-            say hi, I'll try my best to get back to you!
+            I&apos;m currently open for new opportunities. Whether you have a question or just want
+            to say hi, I&apos;ll try my best to get back to you!
           </p>
           <div className="flex flex-wrap gap-4">
             <a

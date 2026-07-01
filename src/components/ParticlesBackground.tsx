@@ -8,8 +8,8 @@ function Particles() {
   const pointsRef = useRef<THREE.Points>(null);
   const count = 4000;
 
-  // Generate random positions and colors for particles
-  const [positions, colors] = useMemo(() => {
+  // Generate random positions and colors for particles (initialized once)
+  const [[positions, colors]] = useState(() => {
     const positions = new Float32Array(count * 3);
     const colors = new Float32Array(count * 3);
     const color = new THREE.Color();
@@ -25,8 +25,8 @@ function Particles() {
       colors[i * 3 + 1] = color.g;
       colors[i * 3 + 2] = color.b;
     }
-    return [positions, colors];
-  }, [count]);
+    return [positions, colors] as const;
+  });
 
   // Create a circular texture for round particles
   const circleTexture = useMemo(() => {
@@ -46,7 +46,7 @@ function Particles() {
     return new THREE.CanvasTexture(canvas);
   }, []);
 
-  const [mouse, setMouse] = useState({ x: 0, y: 0 });
+  const mouse = useRef({ x: 0, y: 0 });
   const targetMouse = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -68,12 +68,12 @@ function Particles() {
       pointsRef.current.rotation.x += delta * 0.008;
 
       // Smooth mouse interpolation (slower, lazier following)
-      mouse.x += (targetMouse.current.x - mouse.x) * 0.015;
-      mouse.y += (targetMouse.current.y - mouse.y) * 0.015;
+      mouse.current.x += (targetMouse.current.x - mouse.current.x) * 0.015;
+      mouse.current.y += (targetMouse.current.y - mouse.current.y) * 0.015;
 
       // React to mouse movement (reduced intensity)
-      pointsRef.current.position.x = mouse.x * 0.3;
-      pointsRef.current.position.y = mouse.y * 0.3;
+      pointsRef.current.position.x = mouse.current.x * 0.3;
+      pointsRef.current.position.y = mouse.current.y * 0.3;
     }
   });
 

@@ -2,11 +2,8 @@
 
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { usePathname } from "next/navigation";
 
 export function Sidebar() {
-  const pathname = usePathname();
-
   return (
     <aside className="m-3 overflow-hidden rounded-[1.75rem] border border-[var(--sidebar-border)] bg-[var(--sidebar-bg)] px-5 py-5 transition-colors duration-500 sm:px-7 md:sticky md:top-3 md:flex md:h-[calc(100vh-1.5rem)] md:flex-col md:justify-between md:px-7 md:py-8">
       <div>

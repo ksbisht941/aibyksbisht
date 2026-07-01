@@ -13,14 +13,14 @@ export function ExperienceSection() {
           Experience
         </p>
         <h2 className="mt-2 text-4xl font-semibold tracking-[-0.06em] sm:text-5xl">
-          Where I've engineered
+          Where I&apos;ve engineered
         </h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6 w-full max-w-[1030px]">
         {experiences.map((exp, i) => (
-          <FadeIn key={exp.id} delay={0.1 + i * 0.1}>
-            <div className="group relative overflow-hidden rounded-[1.5rem] border border-black/[0.06] bg-white p-6 transition duration-300 ease-out hover:-translate-y-0.5 hover:border-black/[0.1] hover:shadow-[0_14px_36px_rgba(35,29,16,0.07)]">
+          <FadeIn key={exp.id} delay={0.1 + i * 0.1} className="h-full">
+            <div className="group h-full flex flex-col relative overflow-hidden rounded-[1.5rem] border border-black/[0.06] bg-white p-6 transition duration-300 ease-out hover:-translate-y-0.5 hover:border-black/[0.1] hover:shadow-[0_14px_36px_rgba(35,29,16,0.07)]">
               <div className="flex flex-col sm:flex-row sm:items-start justify-between mb-6 gap-4">
                 <div className="flex items-center gap-4">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white shadow-sm border border-black/5 relative">
