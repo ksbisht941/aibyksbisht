@@ -5,6 +5,7 @@ Card ratio: **4:5 portrait** (matches your current site's case-study cards, e.g.
 ---
 
 ### 1. Foundational LLM Architecture
+
 **Repo:** github.com/ksbisht941/LLMs-from-scratch
 **Heading:** Building a Language Model From Scratch
 **Subheading:** Followed Sebastian Raschka's "Build a Large Language Model (From Scratch)" to implement a transformer, attention mechanism, and training loop in raw PyTorch.
@@ -16,6 +17,7 @@ Card ratio: **4:5 portrait** (matches your current site's case-study cards, e.g.
 ---
 
 ### 2. End-to-End MLOps Pipeline
+
 **Repo:** github.com/ksbisht941/mlops-pipeline
 **Heading:** From Notebook to Production
 **Subheading:** An automated pipeline handling CI/CD, monitoring, and version control so model deployment is never the bottleneck.
@@ -27,6 +29,7 @@ Card ratio: **4:5 portrait** (matches your current site's case-study cards, e.g.
 ---
 
 ### 3. Scalable RAG Architecture
+
 **Repo:** github.com/ksbisht941/production-rag
 **Heading:** Giving LLMs a Memory That Scales
 **Subheading:** A production-grade Retrieval-Augmented Generation system combining vector search and generative AI for enterprise-scale data retrieval.
@@ -38,6 +41,7 @@ Card ratio: **4:5 portrait** (matches your current site's case-study cards, e.g.
 ---
 
 ### 4. Animal Faces Classification
+
 **Repo:** github.com/ksbisht941/pytorch-projects/animal-faces
 **Heading:** Teaching a CNN to Tell Faces Apart
 **Subheading:** A convolutional neural network trained to classify animal species from facial images alone.
@@ -49,6 +53,7 @@ Card ratio: **4:5 portrait** (matches your current site's case-study cards, e.g.
 ---
 
 ### 5. Bean Leaf Lesion Classification
+
 **Repo:** github.com/ksbisht941/pytorch-projects/bean-leafs-lesions-classification
 **Heading:** Spotting Disease Before It Spreads
 **Subheading:** A CNN-based classifier identifying lesion patterns on bean plant leaves to support early agricultural disease detection.
@@ -60,6 +65,7 @@ Card ratio: **4:5 portrait** (matches your current site's case-study cards, e.g.
 ---
 
 ### 6. Sarcasm Detection on News Headlines
+
 **Repo:** github.com/ksbisht941/pytorch-projects/news-headlines-dataset-for-sarcasm-detection
 **Heading:** Can a Model Catch Sarcasm?
 **Subheading:** An NLP classifier trained on a news headlines dataset to detect sarcastic intent in short text.
@@ -71,6 +77,7 @@ Card ratio: **4:5 portrait** (matches your current site's case-study cards, e.g.
 ---
 
 ### 7. Quran Recitation Audio Classification
+
 **Repo:** github.com/ksbisht941/pytorch-projects/quran-recitations-for-audio-classification
 **Heading:** Classifying Sound, Not Just Sight
 **Subheading:** An audio classification model trained to distinguish Quran recitation styles from raw audio data.
@@ -82,6 +89,7 @@ Card ratio: **4:5 portrait** (matches your current site's case-study cards, e.g.
 ---
 
 ### 8. Rice Type Classification
+
 **Repo:** github.com/ksbisht941/pytorch-projects/rice-type-classification
 **Heading:** Sorting Grain by the Pixel
 **Subheading:** A classification model distinguishing rice varieties from image data, exploring feature engineering on fine-grained visual differences.
@@ -93,6 +101,7 @@ Card ratio: **4:5 portrait** (matches your current site's case-study cards, e.g.
 ---
 
 ### 9. WhatsApp Chat History Analysis
+
 **Repo:** github.com/ksbisht941/pytorch-projects/whatsapp-chat-history
 **Heading:** What Your Chat History Says About You
 **Subheading:** Exploratory analysis of WhatsApp chat data — surfacing patterns in messaging frequency, sentiment, and activity over time.
@@ -104,6 +113,7 @@ Card ratio: **4:5 portrait** (matches your current site's case-study cards, e.g.
 ---
 
 ### 10. Price Prediction ML Models
+
 **Repo:** github.com/ksbisht941/price-prediction-ml-models
 **Heading:** Forecasting Numbers That Move
 **Subheading:** A set of regression and ML models experimenting with feature engineering and algorithm selection for price prediction tasks.
@@ -115,7 +125,8 @@ Card ratio: **4:5 portrait** (matches your current site's case-study cards, e.g.
 ---
 
 ### 11. Travel Document Intelligence (Company Work — V2F Technology)
-**Repo:** *(internal / proprietary — no public link; consider linking to LinkedIn or omitting the GitHub click-through for this card)*
+
+**Repo:** _(internal / proprietary — no public link; consider linking to LinkedIn or omitting the GitHub click-through for this card)_
 **Heading:** Verifying Travel Documents at Scale
 **Subheading:** Production computer vision systems for photograph similarity matching, passport validation, and embassy-specific document preprocessing — built and shipped at Visa2Fly.
 **Tags:** Computer Vision · Production ML · Document AI
@@ -128,6 +139,7 @@ Card ratio: **4:5 portrait** (matches your current site's case-study cards, e.g.
 ## Note on this being proprietary work
 
 Card 11 is real, resume-backed experience, but unlike the others it has no public repo to link to (it's company IP). Two options:
+
 1. Make the card non-clickable / link to your LinkedIn experience section instead of GitHub.
 2. Drop it from the "Case Studies" (proof-of-work/GitHub-linked) section entirely and instead fold it into your Experience section bullets, since case studies on your site seem to imply "click through to code."
 

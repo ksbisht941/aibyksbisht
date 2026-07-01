@@ -9,11 +9,11 @@ export function CustomCursor() {
   const [mounted, setMounted] = useState(false);
   const [cursorState, setCursorState] = useState<CursorState>("default");
   const [isVisible, setIsVisible] = useState(false);
-  
+
   // Use raw motion values for instant tracking, or very tight springs for smoothness
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
-  
+
   // Tighter spring for less lag
   const springConfig = { damping: 30, stiffness: 400, mass: 0.1 };
   const cursorXSpring = useSpring(cursorX, springConfig);
@@ -26,12 +26,12 @@ export function CustomCursor() {
       cursorX.set(e.clientX);
       cursorY.set(e.clientY);
       if (!isVisible) setIsVisible(true);
-      
+
       const target = e.target as HTMLElement;
-      
+
       // Treat cards as links too
       const isLink = target.closest('a, button, [data-cursor="view"], [data-cursor="link"]');
-      
+
       if (isLink) {
         setCursorState("link");
       } else {

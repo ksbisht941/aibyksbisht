@@ -42,9 +42,7 @@ export default function RootLayout({
         <div className="min-h-screen md:grid md:grid-cols-[324px_1fr] text-[var(--foreground)] relative z-10">
           <Sidebar />
           <div className="min-w-0 px-6 pb-5 pt-2 sm:px-10 lg:px-14 lg:pb-9 lg:pt-3 2xl:px-16">
-            <div className="mx-auto w-full max-w-[1280px]">
-              {children}
-            </div>
+            <div className="mx-auto w-full max-w-[1280px]">{children}</div>
           </div>
         </div>
       </body>

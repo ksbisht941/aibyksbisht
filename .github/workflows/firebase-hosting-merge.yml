@@ -1,5 +1,5 @@
 name: Deploy to Firebase Hosting on merge
-'on':
+"on":
   push:
     branches:
       - main
@@ -8,38 +8,38 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '24'
-          cache: 'npm'
-          
+          node-version: "24"
+          cache: "npm"
+
       - name: Install dependencies
         run: npm ci
-        
+
       - name: Build project
         run: npm run build
-        
+
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_AIBYKSBISHT }}'
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_AIBYKSBISHT }}"
           channelId: live
           projectId: aibyksbisht
 
       - name: Send Email on Failure
         if: failure() && env.MAIL_TO != ''
         env:
-          MAIL_TO: '${{ secrets.MAIL_TO_ADDRESS }}'
+          MAIL_TO: "${{ secrets.MAIL_TO_ADDRESS }}"
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
           server_port: 465
           secure: true
-          username: '${{ secrets.MAIL_USERNAME }}'
-          password: '${{ secrets.MAIL_PASSWORD }}'
+          username: "${{ secrets.MAIL_USERNAME }}"
+          password: "${{ secrets.MAIL_PASSWORD }}"
           subject: 🚨 Deployment Failed - Portfolio Project
-          to: '${{ secrets.MAIL_TO_ADDRESS }}'
+          to: "${{ secrets.MAIL_TO_ADDRESS }}"
           from: GitHub Actions
           body: The automated deployment job for your portfolio project failed on branch ${{ github.ref }}. Please check the GitHub Actions logs for details.

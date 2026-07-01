@@ -13,7 +13,7 @@ Framing decision (made on your behalf): Visa2Fly is shown as one company with th
 **Headline:**
 7+ YEARS architecting AI SYSTEMS for ENTERPRISE scale at V2F TECHNOLOGY
 
-*(keep as-is — it's accurate and strong, no changes needed)*
+_(keep as-is — it's accurate and strong, no changes needed)_
 
 ---
 
@@ -31,23 +31,25 @@ So I taught myself. I built CNNs for image classification, wrote a transformer-b
 
 I care about understanding systems at the level where I could rebuild them if I had to. That's the thread connecting a founding engineer who shipped Angular UIs in 2019 to someone training transformers from scratch in 2026.
 
-*Clarification needed: do you want Option A (short, homepage-friendly) or Option B (longer, dedicated page)? I can also blend them — short version on homepage with a "Read more" link to the long version.*
+_Clarification needed: do you want Option A (short, homepage-friendly) or Option B (longer, dedicated page)? I can also blend them — short version on homepage with a "Read more" link to the long version._
 
 ---
 
 ## 3. Experience Section
 
 ### V2F Technology (Visa2Fly)
+
 **AI/ML Engineer & Full-Stack Developer** · Dec 2019 – Present · New Delhi
 
 A travel-tech startup simplifying visa and travel document processing. Joined as a founding technical hire; grew from building the first UI screens to leading mobile development and architecting AI-driven document/photo verification systems used in production.
 
 ---
 
-**React Native Developer** — *Full-time, On-site*
+**React Native Developer** — _Full-time, On-site_
 **May 2025 – Present**
 
 Leading development of Visa2Fly's mobile application, bridging product goals with technical execution to deliver the travel and visa experience.
+
 - End-to-end ownership of key mobile features: real-time visa tracking, onboarding flow, payment integrations.
 - Collaborate with product and design to prioritize features based on user analytics and customer feedback.
 - Optimize app speed, reliability, and retention through iterative testing and feedback loops.
@@ -55,10 +57,11 @@ Leading development of Visa2Fly's mobile application, bridging product goals wit
 
 ---
 
-**Senior Frontend Developer** — *Full-time, On-site*
+**Senior Frontend Developer** — _Full-time, On-site_
 **Jan 2022 – Present**
 
 Owned the frontend roadmap for Visa2Fly's B2C website and internal platforms, turning technical constraints into user-focused product decisions.
+
 - Partnered with founders and product stakeholders on roadmap features that improved acquisition and retention.
 - Led UX/UI revamps based on analytics and user behavior, improving task completion and reducing bounce rate.
 - Designed internal dashboards for booking management, vendor tracking, and automated invoicing.
@@ -67,10 +70,11 @@ Owned the frontend roadmap for Visa2Fly's B2C website and internal platforms, tu
 
 ---
 
-**Frontend Developer** — *Full-time, On-site*
+**Frontend Developer** — _Full-time, On-site_
 **Dec 2019 – Apr 2022**
 
 Worked with product and design to evolve Visa2Fly's core platform from MVP to a scalable consumer product.
+
 - Delivered user-facing modules for document uploads, visa status tracking, and partner integrations.
 - Used customer support and analytics feedback to improve usability and feature adoption.
 - Worked with backend and marketing teams to ship features supporting new product launches.
@@ -78,10 +82,11 @@ Worked with product and design to evolve Visa2Fly's core platform from MVP to a 
 
 ---
 
-**Web Developer** — *Internship, Hybrid*
+**Web Developer** — _Internship, Hybrid_
 **Jul 2019 – Dec 2019**
 
 Contributed to the company's first product build, working directly with the founding team.
+
 - Supported MVP development; learned how business goals, design, and engineering align at a startup.
 - Built initial layouts and user flows from early customer pain points.
 - **Impact:** built core UI components still in production; contributed to the company's first public launch.
@@ -89,12 +94,13 @@ Contributed to the company's first product build, working directly with the foun
 ---
 
 ### NextLeap
+
 **Product Management Fellow — Top Fellow**
 2021 – 2022
 
 Selected as Top Fellow in a Product Management fellowship focused on translating business requirements, market analysis, and product metrics into technical delivery — the foundation for how I now scope and prioritize ML initiatives like a product, not just a research exercise.
 
-*Note: kept your resume's "2021-2022" dates since LinkedIn data wasn't provided for this one — confirm if different.*
+_Note: kept your resume's "2021-2022" dates since LinkedIn data wasn't provided for this one — confirm if different._
 
 ---
 
@@ -103,6 +109,7 @@ Selected as Top Fellow in a Product Management fellowship focused on translating
 Each card: background image + heading + subheading + tags, clicking through to your GitHub repo. Below are heading/subheading copy and an image generation prompt for each.
 
 ### Card 1 — Foundational LLM Architecture
+
 **Heading:** Building a Language Model From Scratch
 **Subheading:** A transformer, attention mechanism, and training loop — written from first principles in PyTorch to understand LLMs from the inside out.
 **Tags:** PyTorch · Python · Deep Learning · Transformers
@@ -114,6 +121,7 @@ Each card: background image + heading + subheading + tags, clicking through to y
 ---
 
 ### Card 2 — Multi-Modal Classification Suite
+
 **Heading:** Teaching Machines to See and Read
 **Subheading:** Custom CNNs for image classification across animal faces and crop disease detection, paired with NLP models for sarcasm detection in news text.
 **Tags:** PyTorch · CNNs · NLP · Computer Vision
@@ -125,6 +133,7 @@ Each card: background image + heading + subheading + tags, clicking through to y
 ---
 
 ### Card 3 — End-to-End MLOps Pipeline
+
 **Heading:** From Notebook to Production
 **Subheading:** An automated pipeline for continuous integration, monitoring, and version control of machine learning models — built so deployment is never the bottleneck.
 **Tags:** AWS · Docker · CI/CD · MLOps
@@ -136,6 +145,7 @@ Each card: background image + heading + subheading + tags, clicking through to y
 ---
 
 ### Card 4 — Scalable RAG Architecture
+
 **Heading:** Giving LLMs a Memory That Scales
 **Subheading:** A production-grade Retrieval-Augmented Generation system combining vector search and generative AI for enterprise-scale data retrieval.
 **Tags:** Python · LangChain · Pinecone · Generative AI

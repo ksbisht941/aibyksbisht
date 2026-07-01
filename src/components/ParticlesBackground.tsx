@@ -7,7 +7,7 @@ import * as THREE from "three";
 function Particles() {
   const pointsRef = useRef<THREE.Points>(null);
   const count = 4000;
-  
+
   // Generate random positions and colors for particles
   const [positions, colors] = useMemo(() => {
     const positions = new Float32Array(count * 3);
@@ -15,7 +15,7 @@ function Particles() {
     const color = new THREE.Color();
     for (let i = 0; i < count; i++) {
       // Create a nice distribution
-      positions[i * 3] = (Math.random() - 0.5) * 15;     // x
+      positions[i * 3] = (Math.random() - 0.5) * 15; // x
       positions[i * 3 + 1] = (Math.random() - 0.5) * 15; // y
       positions[i * 3 + 2] = (Math.random() - 0.5) * 15; // z
 
@@ -32,7 +32,7 @@ function Particles() {
   const circleTexture = useMemo(() => {
     // Only run in browser
     if (typeof document === "undefined") return null;
-    
+
     const canvas = document.createElement("canvas");
     canvas.width = 32;
     canvas.height = 32;
@@ -64,30 +64,24 @@ function Particles() {
   useFrame((state, delta) => {
     if (pointsRef.current) {
       // Slow constant rotation
-      pointsRef.current.rotation.y += delta * 0.05;
-      pointsRef.current.rotation.x += delta * 0.02;
-      
-      // Smooth mouse interpolation
-      mouse.x += (targetMouse.current.x - mouse.x) * 0.05;
-      mouse.y += (targetMouse.current.y - mouse.y) * 0.05;
+      pointsRef.current.rotation.y += delta * 0.02;
+      pointsRef.current.rotation.x += delta * 0.008;
 
-      // React to mouse movement
-      pointsRef.current.position.x = mouse.x * 0.5;
-      pointsRef.current.position.y = mouse.y * 0.5;
+      // Smooth mouse interpolation (slower, lazier following)
+      mouse.x += (targetMouse.current.x - mouse.x) * 0.015;
+      mouse.y += (targetMouse.current.y - mouse.y) * 0.015;
+
+      // React to mouse movement (reduced intensity)
+      pointsRef.current.position.x = mouse.x * 0.3;
+      pointsRef.current.position.y = mouse.y * 0.3;
     }
   });
 
   return (
     <points ref={pointsRef}>
       <bufferGeometry>
-        <bufferAttribute
-          attach="attributes-position"
-          args={[positions, 3]}
-        />
-        <bufferAttribute
-          attach="attributes-color"
-          args={[colors, 3]}
-        />
+        <bufferAttribute attach="attributes-position" args={[positions, 3]} />
+        <bufferAttribute attach="attributes-color" args={[colors, 3]} />
       </bufferGeometry>
       <pointsMaterial
         size={0.035} // Slightly larger to show off colors and shape

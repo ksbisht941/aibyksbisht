@@ -24,7 +24,6 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
 
       <div className="relative overflow-hidden rounded-[1.25rem] bg-[#111] shadow-[0_6px_28px_rgba(35,29,16,0.035)] transition duration-300 h-full border border-white/10">
         <div className="relative aspect-[4/5] overflow-hidden flex flex-col justify-end">
-
           {/* Background Thumbnail */}
           {project.thumbnail && (
             <Image
