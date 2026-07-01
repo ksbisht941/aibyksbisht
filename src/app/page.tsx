@@ -146,31 +146,81 @@ export default function Home() {
                   AI/ML Engineer
                 </p>
               </div>
-              <h1
+              <motion.h1
                 className="font-black uppercase leading-[1.01] tracking-[-0.04em] text-[#151515] text-[42px] sm:text-[56px] md:text-[68px] relative"
                 style={{ WebkitTextStroke: "2px #ffffff", paintOrder: "stroke" }}
+                initial="hidden"
+                animate="visible"
+                variants={{
+                  visible: {
+                    transition: {
+                      staggerChildren: 0.1,
+                      delayChildren: 0.2,
+                    }
+                  }
+                }}
               >
-                <span className="text-gradient-hover">{mounted ? getYearsOfExperience() : 7}+</span>
-                <span> YEARS </span>
-                <span className="relative z-10 font-medium normal-case italic tracking-[-0.02em] -ml-[0.25em] font-serif text-black/90">
-                  architecting
+                <span className="block overflow-hidden pb-2 -mb-2">
+                  <motion.span 
+                    className="block"
+                    variants={{
+                      hidden: { y: "120%" },
+                      visible: { y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+                    }}
+                  >
+                    <span className="text-gradient-hover">{mounted ? getYearsOfExperience() : 7}+</span>
+                    <span> YEARS </span>
+                    <span className="relative z-10 font-medium normal-case italic tracking-[-0.02em] -ml-[0.25em] font-serif text-black/90">
+                      architecting
+                    </span>
+                  </motion.span>
                 </span>
-                <br />
-                <span>AI SYSTEMS </span>
-                <span className="relative z-10 font-medium normal-case italic tracking-[-0.02em] -ml-[0.25em] font-serif text-black/90">
-                  for
+                
+                <span className="block overflow-hidden pb-2 -mb-2">
+                  <motion.span 
+                    className="block"
+                    variants={{
+                      hidden: { y: "120%" },
+                      visible: { y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+                    }}
+                  >
+                    <span>AI SYSTEMS </span>
+                    <span className="relative z-10 font-medium normal-case italic tracking-[-0.02em] -ml-[0.25em] font-serif text-black/90">
+                      for
+                    </span>
+                  </motion.span>
                 </span>
-                <br />
-                <span>ENTERPRISE </span>
-                <span className="relative z-10 font-medium normal-case italic tracking-[-0.02em] -ml-[0.25em] font-serif text-black/90">
-                  scale
+
+                <span className="block overflow-hidden pb-2 -mb-2">
+                  <motion.span 
+                    className="block"
+                    variants={{
+                      hidden: { y: "120%" },
+                      visible: { y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+                    }}
+                  >
+                    <span>ENTERPRISE </span>
+                    <span className="relative z-10 font-medium normal-case italic tracking-[-0.02em] -ml-[0.25em] font-serif text-black/90">
+                      scale
+                    </span>
+                  </motion.span>
                 </span>
-                <br />
-                <span className="relative z-10 font-medium normal-case italic tracking-[-0.02em] font-serif text-black/90">
-                  at
+
+                <span className="block overflow-hidden pb-2 -mb-2">
+                  <motion.span 
+                    className="block"
+                    variants={{
+                      hidden: { y: "120%" },
+                      visible: { y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+                    }}
+                  >
+                    <span className="relative z-10 font-medium normal-case italic tracking-[-0.02em] font-serif text-black/90">
+                      at
+                    </span>
+                    <span> V2F TECHNOLOGY </span>
+                  </motion.span>
                 </span>
-                <span> V2F TECHNOLOGY </span>
-              </h1>
+              </motion.h1>
               {/* Floating Colorful Stickers */}
               <FadeIn
                 delay={0.8}

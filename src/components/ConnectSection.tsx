@@ -17,7 +17,7 @@ export function ConnectSection() {
           <div className="flex gap-4">
             <a
               href="mailto:ksbisht941@gmail.com"
-              className="group flex h-12 items-center justify-center gap-2 rounded-full bg-[#171717] px-6 text-[13px] font-semibold text-white transition-all hover:bg-black hover:shadow-lg hover:shadow-black/10"
+              className="group flex h-12 items-center justify-center gap-2 rounded-full bg-[#171717] px-6 text-[13px] font-semibold text-white transition-all hover:bg-black/80"
             >
               Say Hi
             </a>
@@ -25,7 +25,7 @@ export function ConnectSection() {
               href="https://www.linkedin.com/in/kuldeep-s-bisht/"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex h-12 items-center justify-center gap-2 rounded-full border border-black/10 bg-white px-6 text-[13px] font-semibold text-[#171717] transition-all hover:border-black/20 hover:bg-[#fcfcfc] hover:shadow-sm"
+              className="group flex h-12 items-center justify-center gap-2 rounded-full border border-black/20 bg-white px-6 text-[13px] font-semibold text-[#171717] transition-all hover:border-black/80"
             >
               LinkedIn
             </a>
