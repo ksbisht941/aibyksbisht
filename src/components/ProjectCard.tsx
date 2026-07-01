@@ -16,6 +16,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       href={project.githubUrl}
       target="_blank"
       rel="noopener noreferrer"
+      aria-label={`${project.title} (opens in a new tab)`}
       data-cursor="view"
       className="glow-card group relative block w-full overflow-visible rounded-[1.25rem] cursor-none transition duration-500"
     >

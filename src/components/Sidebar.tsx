@@ -53,17 +53,17 @@ export function Sidebar() {
 
       <div className="mt-8 flex flex-col gap-8 md:mt-0">
         <div className="flex flex-wrap gap-x-4 gap-y-2 md:flex-col md:items-start md:gap-4">
-          <a href="https://drive.google.com/drive/folders/1x3ZKJHRNT0e8wsiKVowoRuEhHSvtFbO2?usp=sharing" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-[11px] font-semibold uppercase tracking-[0.16em] transition text-black/45 hover:text-black">
+          <a href="https://drive.google.com/drive/folders/1x3ZKJHRNT0e8wsiKVowoRuEhHSvtFbO2?usp=sharing" target="_blank" rel="noreferrer" aria-label="About Me (opens in a new tab)" className="inline-flex items-center gap-1 text-[11px] font-semibold uppercase tracking-[0.16em] transition text-black/45 hover:text-black">
             About Me
-            <ArrowUpRight className="w-3.5 h-3.5" />
+            <ArrowUpRight className="w-3.5 h-3.5" aria-hidden="true" />
           </a>
-          <a href="https://www.linkedin.com/in/kuldeep-s-bisht/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-[11px] font-semibold uppercase tracking-[0.16em] transition text-black/45 hover:text-black">
+          <a href="https://www.linkedin.com/in/kuldeep-s-bisht/" target="_blank" rel="noreferrer" aria-label="LinkedIn (opens in a new tab)" className="inline-flex items-center gap-1 text-[11px] font-semibold uppercase tracking-[0.16em] transition text-black/45 hover:text-black">
             LinkedIn
-            <ArrowUpRight className="w-3.5 h-3.5" />
+            <ArrowUpRight className="w-3.5 h-3.5" aria-hidden="true" />
           </a>
-          <a href="https://github.com/ksbisht941" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-[11px] font-semibold uppercase tracking-[0.16em] transition text-black/45 hover:text-black">
+          <a href="https://github.com/ksbisht941" target="_blank" rel="noreferrer" aria-label="GitHub (opens in a new tab)" className="inline-flex items-center gap-1 text-[11px] font-semibold uppercase tracking-[0.16em] transition text-black/45 hover:text-black">
             GitHub
-            <ArrowUpRight className="w-3.5 h-3.5" />
+            <ArrowUpRight className="w-3.5 h-3.5" aria-hidden="true" />
           </a>
         </div>
         <p className="hidden text-[11px] leading-5 md:block text-black/35">

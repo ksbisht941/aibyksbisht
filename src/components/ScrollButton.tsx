@@ -59,6 +59,7 @@ export function ScrollButton() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 1.5, duration: 0.5 }}
       onClick={handleClick}
+      aria-label={getLabel()}
       data-cursor="view"
       className="fixed bottom-6 left-1/2 z-50 flex -translate-x-1/2 items-center gap-2 rounded-full border border-black/5 bg-white px-5 py-2.5 text-[13px] font-medium text-[#111] shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all hover:scale-105 hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] cursor-none"
     >
@@ -69,6 +70,7 @@ export function ScrollButton() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 10 }}
           transition={{ duration: 0.2 }}
+          aria-hidden="true"
         >
           {getLabel()}
         </motion.span>
@@ -80,6 +82,7 @@ export function ScrollButton() {
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.5 }}
           transition={{ duration: 0.2 }}
+          aria-hidden="true"
         >
           <Icon className="h-3.5 w-3.5 opacity-60" strokeWidth={2.5} />
         </motion.div>

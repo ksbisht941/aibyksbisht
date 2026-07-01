@@ -64,3 +64,9 @@ body {
   --card-hover: #eaffab;
   --card-glow: rgba(127, 180, 70, 0.18);
 }
+
+/* Accessibility Focus States */
+*:focus-visible {
+  outline: 2px solid #3b82f6 !important;
+  outline-offset: 4px !important;
+}

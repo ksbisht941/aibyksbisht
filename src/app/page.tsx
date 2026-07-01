@@ -68,7 +68,9 @@ export default function Home() {
   return (
     <main>
       {/* Marquee */}
+      <div className="sr-only">Core technologies: PyTorch, Python, AWS, Docker, MLOps, RAG, Next.js, Angular, PostgreSQL.</div>
       <div
+        aria-hidden="true"
         className="marquee-viewport -mx-6 overflow-hidden py-1 sm:-mx-10 lg:-mx-14 2xl:-mx-16 mb-20"
         style={{
           WebkitMaskImage: 'linear-gradient(90deg, #0000 0, #000 5rem calc(100% - 5rem), #0000 100%)',
@@ -131,6 +133,7 @@ export default function Home() {
               <FadeIn delay={0.8} className="absolute top-6 md:top-5 left-[50%] hidden sm:block z-20">
                 {mounted && (
                   <motion.div
+                    aria-hidden="true"
                     className="relative overflow-hidden bg-[#cddc39] text-[#33691e] px-4 py-1.5 rounded-full font-bold text-[10px] md:text-[13px] border border-[#aab92a] shadow-[0_4px_8px_rgba(0,0,0,0.1),inset_0_2px_2px_rgba(255,255,255,0.6),inset_0_-2px_4px_rgba(0,0,0,0.05)] rotate-6 tracking-wide after:absolute after:inset-0 after:bg-[radial-gradient(circle_at_100%_20%,transparent_10px,rgba(255,255,255,0.4)_10px,rgba(255,255,255,0.4)_20px,transparent_20px,transparent_30px,rgba(255,255,255,0.15)_30px,rgba(255,255,255,0.15)_40px,transparent_40px)]"
                     style={{ x: x1, y: y1 }}
                   >
@@ -141,6 +144,7 @@ export default function Home() {
               <FadeIn delay={0.9} className="absolute top-[10%] right-8 md:right-24 hidden sm:block z-20">
                 {mounted && (
                   <motion.div
+                    aria-hidden="true"
                     className="relative overflow-hidden bg-[#d1c4e9] text-[#311b92] px-4 py-1.5 rounded-full font-bold text-[10px] md:text-[13px] border border-[#b39ddb] shadow-[0_4px_8px_rgba(0,0,0,0.1),inset_0_2px_2px_rgba(255,255,255,0.6),inset_0_-2px_4px_rgba(0,0,0,0.05)] -rotate-3 tracking-wide after:absolute after:inset-0 after:bg-[radial-gradient(circle_at_0%_100%,transparent_10px,rgba(255,255,255,0.15)_10px,rgba(255,255,255,0.15)_20px,transparent_20px,transparent_30px,rgba(255,255,255,0.35)_30px,rgba(255,255,255,0.35)_40px,transparent_40px)]"
                     style={{ x: x2, y: y2 }}
                   >
@@ -151,6 +155,7 @@ export default function Home() {
               <FadeIn delay={1.0} className="absolute top-[55%] right-2 md:right-52 hidden sm:block z-20">
                 {mounted && (
                   <motion.div
+                    aria-hidden="true"
                     className="relative overflow-hidden bg-[#fff59d] text-[#f57f17] px-4 py-1.5 rounded-full font-bold text-[10px] md:text-[13px] border border-[#ffeb3b] shadow-[0_4px_8px_rgba(0,0,0,0.1),inset_0_2px_2px_rgba(255,255,255,0.6),inset_0_-2px_4px_rgba(0,0,0,0.05)] rotate-12 tracking-wide after:absolute after:inset-0 after:bg-[radial-gradient(circle_at_50%_-50%,transparent_15px,rgba(255,255,255,0.3)_15px,rgba(255,255,255,0.3)_25px,transparent_25px,transparent_35px,rgba(255,255,255,0.1)_35px,rgba(255,255,255,0.1)_45px,transparent_45px)]"
                     style={{ x: x3, y: y3 }}
                   >
@@ -161,6 +166,7 @@ export default function Home() {
               <FadeIn delay={1.1} className="absolute -bottom-[10%] -left-6 md:-left-12 hidden sm:block z-20">
                 {mounted && (
                   <motion.div
+                    aria-hidden="true"
                     className="relative overflow-hidden bg-[#4dd0e1] text-[#006064] px-4 py-1.5 rounded-full font-bold text-[10px] md:text-[13px] border border-[#26c6da] shadow-[0_4px_8px_rgba(0,0,0,0.1),inset_0_2px_2px_rgba(255,255,255,0.6),inset_0_-2px_4px_rgba(0,0,0,0.05)] -rotate-12 tracking-wide after:absolute after:inset-0 after:bg-[radial-gradient(circle_at_-20%_50%,transparent_15px,rgba(255,255,255,0.1)_15px,rgba(255,255,255,0.1)_25px,transparent_25px,transparent_35px,rgba(255,255,255,0.45)_35px,rgba(255,255,255,0.45)_45px,transparent_45px)]"
                     style={{ x: x4, y: y4 }}
                   >
@@ -171,6 +177,7 @@ export default function Home() {
               <FadeIn delay={1.2} className="absolute -bottom-6 md:-bottom-10 right-[20%] hidden sm:block z-20">
                 {mounted && (
                   <motion.div
+                    aria-hidden="true"
                     className="relative overflow-hidden bg-[#ff8a80] text-[#b71c1c] px-4 py-1.5 rounded-full font-bold text-[10px] md:text-[13px] border border-[#ff5252] shadow-[0_4px_8px_rgba(0,0,0,0.1),inset_0_2px_2px_rgba(255,255,255,0.6),inset_0_-2px_4px_rgba(0,0,0,0.05)] rotate-3 tracking-wide after:absolute after:inset-0 after:bg-[radial-gradient(circle_at_120%_80%,transparent_10px,rgba(255,255,255,0.35)_10px,rgba(255,255,255,0.35)_20px,transparent_20px,transparent_30px,rgba(255,255,255,0.15)_30px,rgba(255,255,255,0.15)_40px,transparent_40px)]"
                     style={{ x: x5, y: y5 }}
                   >
