@@ -69,7 +69,7 @@ export default function Home() {
     <main>
       {/* Marquee */}
       <div
-        className="marquee-viewport -mx-6 hidden overflow-hidden py-1 sm:-mx-10 sm:block lg:-mx-14 2xl:-mx-16 mb-20"
+        className="marquee-viewport -mx-6 overflow-hidden py-1 sm:-mx-10 lg:-mx-14 2xl:-mx-16 mb-20"
         style={{
           WebkitMaskImage: 'linear-gradient(90deg, #0000 0, #000 5rem calc(100% - 5rem), #0000 100%)',
           maskImage: 'linear-gradient(90deg, #0000 0, #000 5rem calc(100% - 5rem), #0000 100%)'
@@ -103,7 +103,7 @@ export default function Home() {
                 </p>
               </div>
               <h1
-                className="font-black uppercase leading-[1.01] tracking-[-0.04em] text-[#151515] text-[68px] relative"
+                className="font-black uppercase leading-[1.01] tracking-[-0.04em] text-[#151515] text-[42px] sm:text-[56px] md:text-[68px] relative"
                 style={{ WebkitTextStroke: "2px #ffffff", paintOrder: "stroke" }}
               >
                 <span>7+ YEARS </span>

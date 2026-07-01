@@ -22,7 +22,7 @@ export function Sidebar() {
           </div>
         </nav>
 
-        <ul className="group/list mt-10 hidden flex-col md:flex space-y-1">
+        <ul className="group/list mt-6 flex flex-wrap gap-3 md:mt-10 md:flex-col md:flex-nowrap md:gap-0 md:space-y-1">
           {[
             { name: 'About', href: '#about' },
             { name: 'Work', href: '#work' },

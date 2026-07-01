@@ -60,7 +60,7 @@ export function ScrollButton() {
       transition={{ delay: 1.5, duration: 0.5 }}
       onClick={handleClick}
       data-cursor="view"
-      className="fixed bottom-6 left-1/2 z-9 flex -translate-x-1/2 items-center gap-2 rounded-full border border-black/5 bg-white px-5 py-2.5 text-[13px] font-medium text-[#111] shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all hover:scale-105 hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] cursor-none"
+      className="fixed bottom-6 left-1/2 z-50 flex -translate-x-1/2 items-center gap-2 rounded-full border border-black/5 bg-white px-5 py-2.5 text-[13px] font-medium text-[#111] shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all hover:scale-105 hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] cursor-none"
     >
       <AnimatePresence mode="wait">
         <motion.span
