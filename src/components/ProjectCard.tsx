@@ -26,7 +26,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           {project.thumbnail && (
             <Image
               src={project.thumbnail}
-              alt={project.title}
+              alt={`Screenshot of ${project.title} - AI Project`}
               fill
               loading="lazy"
               className="object-cover transition-transform duration-700 group-hover:scale-105"
