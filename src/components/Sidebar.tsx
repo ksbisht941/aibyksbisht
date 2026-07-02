@@ -2,14 +2,15 @@
 
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { AnimatedLogo } from "./AnimatedLogo";
 
 export function Sidebar() {
   return (
     <aside className="m-3 overflow-hidden rounded-[1.75rem] border border-[var(--sidebar-border)] bg-[var(--sidebar-bg)] px-5 py-5 transition-colors duration-500 sm:px-7 md:sticky md:top-3 md:flex md:h-[calc(100vh-1.5rem)] md:flex-col md:justify-between md:px-7 md:py-8">
       <div>
         <nav className="flex items-center justify-between gap-4 text-sm font-medium">
-          <Link href="/" className="block font-bold text-lg tracking-tight">
-            KSBisht.
+          <Link href="/" className="block">
+            <AnimatedLogo />
           </Link>
           <div className="flex items-center gap-4">
             <a
