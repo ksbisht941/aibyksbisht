@@ -161,7 +161,7 @@ export default function Home() {
                 }}
               >
                 <span className="block overflow-hidden pb-2 -mb-2">
-                  <motion.span 
+                  <motion.span
                     className="block"
                     variants={{
                       hidden: { y: "120%" },
@@ -170,14 +170,14 @@ export default function Home() {
                   >
                     <span className="text-gradient-hover">{mounted ? getYearsOfExperience() : 7}+</span>
                     <span> YEARS </span>
-                    <span className="relative z-10 font-medium normal-case italic tracking-[-0.02em] -ml-[0.25em] font-serif text-black/90">
+                    <span className="relative z-10 font-medium normal-case italic tracking-[-0.02em] md:-ml-[0.25em] font-serif text-black/90">
                       architecting
                     </span>
                   </motion.span>
                 </span>
-                
+
                 <span className="block overflow-hidden pb-2 -mb-2">
-                  <motion.span 
+                  <motion.span
                     className="block"
                     variants={{
                       hidden: { y: "120%" },
@@ -185,14 +185,14 @@ export default function Home() {
                     }}
                   >
                     <span>AI SYSTEMS </span>
-                    <span className="relative z-10 font-medium normal-case italic tracking-[-0.02em] -ml-[0.25em] font-serif text-black/90">
+                    <span className="relative z-10 font-medium normal-case italic tracking-[-0.02em] md:-ml-[0.25em] font-serif text-black/90">
                       for
                     </span>
                   </motion.span>
                 </span>
 
                 <span className="block overflow-hidden pb-2 -mb-2">
-                  <motion.span 
+                  <motion.span
                     className="block"
                     variants={{
                       hidden: { y: "120%" },
@@ -200,14 +200,14 @@ export default function Home() {
                     }}
                   >
                     <span>ENTERPRISE </span>
-                    <span className="relative z-10 font-medium normal-case italic tracking-[-0.02em] -ml-[0.25em] font-serif text-black/90">
+                    <span className="relative z-10 font-medium normal-case italic tracking-[-0.02em] md:-ml-[0.25em] font-serif text-black/90">
                       scale
                     </span>
                   </motion.span>
                 </span>
 
                 <span className="block overflow-hidden pb-2 -mb-2">
-                  <motion.span 
+                  <motion.span
                     className="block"
                     variants={{
                       hidden: { y: "120%" },
