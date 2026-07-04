@@ -4,6 +4,7 @@ import { FadeIn } from "@/components/FadeIn";
 import { ProjectCard } from "@/components/ProjectCard";
 import { ExperienceSection } from "@/components/ExperienceSection";
 import { ConnectSection } from "@/components/ConnectSection";
+import { ScrollButton } from "@/components/ScrollButton";
 import { projects } from "@/lib/data";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -328,6 +329,7 @@ export default function Home() {
 
       <ExperienceSection />
       <ConnectSection />
+      <ScrollButton />
     </main>
   );
 }

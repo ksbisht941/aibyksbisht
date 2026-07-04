@@ -41,7 +41,7 @@ export const projects: Project[] = [
     shortDescription:
       "A convolutional neural network trained to classify animal species from facial images alone.",
     techStack: ["PyTorch", "CNN", "Computer Vision"],
-    githubUrl: "https://github.com/ksbisht941/pytorch-projects/animal-faces",
+    githubUrl: "https://github.com/ksbisht941/pytorch-projects/tree/main/animal-faces",
     thumbnail: "/projects/animal-faces.png",
   },
   {
@@ -50,7 +50,7 @@ export const projects: Project[] = [
     shortDescription:
       "A CNN-based classifier identifying lesion patterns on bean plant leaves to support early agricultural disease detection.",
     techStack: ["PyTorch", "CNN", "Agritech"],
-    githubUrl: "https://github.com/ksbisht941/pytorch-projects/bean-leafs-lesions-classification",
+    githubUrl: "https://github.com/ksbisht941/pytorch-projects/tree/main/bean-leafs-lesions-classification",
     thumbnail: "/projects/bean-leafs-lesions-classification.png",
   },
   {
@@ -60,7 +60,7 @@ export const projects: Project[] = [
       "An NLP classifier trained on a news headlines dataset to detect sarcastic intent in short text.",
     techStack: ["PyTorch", "NLP", "Text Classification"],
     githubUrl:
-      "https://github.com/ksbisht941/pytorch-projects/news-headlines-dataset-for-sarcasm-detection",
+      "https://github.com/ksbisht941/pytorch-projects/tree/main/news-headlines-dataset-for-sarcasm-detection",
     thumbnail: "/projects/sarcasm-detection.png",
   },
   {
@@ -70,7 +70,7 @@ export const projects: Project[] = [
       "An audio classification model trained to distinguish Quran recitation styles from raw audio data.",
     techStack: ["PyTorch", "Audio ML", "Signal Processing"],
     githubUrl:
-      "https://github.com/ksbisht941/pytorch-projects/quran-recitations-for-audio-classification",
+      "https://github.com/ksbisht941/pytorch-projects/tree/main/quran-recitations-for-audio-classification",
     thumbnail: "/projects/audio-classification.png",
   },
   {
@@ -79,18 +79,18 @@ export const projects: Project[] = [
     shortDescription:
       "A classification model distinguishing rice varieties from image data, exploring feature engineering on fine-grained visual differences.",
     techStack: ["PyTorch", "Computer Vision", "Classification"],
-    githubUrl: "https://github.com/ksbisht941/pytorch-projects/rice-type-classification",
+    githubUrl: "https://github.com/ksbisht941/pytorch-projects/tree/main/rice-type-classification",
     thumbnail: "/projects/rice-type.png",
   },
-  {
-    id: "whatsapp-chat-history",
-    title: "What Your Chat History Says About You",
-    shortDescription:
-      "Exploratory analysis of WhatsApp chat data — surfacing patterns in messaging frequency, sentiment, and activity over time.",
-    techStack: ["Python", "Data Analysis", "NLP"],
-    githubUrl: "https://github.com/ksbisht941/pytorch-projects/whatsapp-chat-history",
-    thumbnail: "/projects/whatsapp-chat.png",
-  },
+  // {
+  //   id: "whatsapp-chat-history",
+  //   title: "What Your Chat History Says About You",
+  //   shortDescription:
+  //     "Exploratory analysis of WhatsApp chat data — surfacing patterns in messaging frequency, sentiment, and activity over time.",
+  //   techStack: ["Python", "Data Analysis", "NLP"],
+  //   githubUrl: "https://github.com/ksbisht941/pytorch-projects/whatsapp-chat-history",
+  //   thumbnail: "/projects/whatsapp-chat.png",
+  // },
   {
     id: "price-prediction-ml-models",
     title: "Forecasting Numbers That Move",

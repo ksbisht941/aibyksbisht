@@ -22,16 +22,16 @@ export function AnimatedLogo() {
           fill="transparent"
           stroke="black"
           strokeWidth="6"
-          strokeLinecap="square"
-          strokeLinejoin="miter"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
           transition={{
-            duration: 2,
-            ease: "easeInOut",
+            duration: 2.5,
+            ease: [0.4, 0, 0.2, 1], // Smooth ease-in-out curve
             repeat: Infinity,
             repeatType: "reverse",
-            repeatDelay: 0.5
+            repeatDelay: 0.2
           }}
         />
         {/* We can also have a faint background of the K so it's always visible */}
@@ -40,8 +40,8 @@ export function AnimatedLogo() {
           fill="transparent"
           stroke="black"
           strokeWidth="6"
-          strokeLinecap="square"
-          strokeLinejoin="miter"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           className="opacity-10"
         />
       </svg>

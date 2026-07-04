@@ -54,7 +54,7 @@ Card ratio: **4:5 portrait** (matches your current site's case-study cards, e.g.
 
 ### 5. Bean Leaf Lesion Classification
 
-**Repo:** github.com/ksbisht941/pytorch-projects/bean-leafs-lesions-classification
+**Repo:** github.com/ksbisht941/pytorch-projects/tree/main/bean-leafs-lesions-classification
 **Heading:** Spotting Disease Before It Spreads
 **Subheading:** A CNN-based classifier identifying lesion patterns on bean plant leaves to support early agricultural disease detection.
 **Tags:** PyTorch · CNN · Agritech
