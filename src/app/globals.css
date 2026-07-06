@@ -27,10 +27,10 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), sans-serif;
   overflow-x: hidden;
-  cursor: none;
 }
 
-* {
+.custom-cursor-wrapper,
+.custom-cursor-wrapper * {
   cursor: none !important;
 }
 
