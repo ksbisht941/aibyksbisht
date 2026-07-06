@@ -20,7 +20,7 @@ Takes a list of conversation messages and returns a streamed AI response.
   "messages": [
     {
       "role": "assistant",
-      "content": "Hi! I'm Kuldeep's AI assistant. Ask me anything about his work, experience, or skills!"
+      "content": "Hello there! 👋 I'm Kuldeep's personal AI agent. Ask me about his MLOps experience, projects, or technical skills."
     },
     {
       "role": "user",

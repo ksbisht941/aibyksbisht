@@ -71,7 +71,7 @@ body {
 }
 
 /* Accessibility Focus States */
-*:focus-visible {
+*:not(.no-global-focus):focus-visible {
   outline: 2px solid #3b82f6 !important;
   outline-offset: 4px !important;
 }
