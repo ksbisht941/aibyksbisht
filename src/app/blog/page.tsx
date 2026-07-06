@@ -93,7 +93,7 @@ export default function BlogIndex() {
               </div>
               <h4 className="text-lg font-bold leading-tight text-black group-hover/item:text-blue-600 transition-colors">
                 <Link href={`/blog/${post.slug}`}>
-                  <span className="absolute inset-0 z-10" />
+                  {/* <span className="absolute inset-0 z-10" /> */}
                   {post.title}
                 </Link>
               </h4>
