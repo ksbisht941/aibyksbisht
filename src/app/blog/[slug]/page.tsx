@@ -23,9 +23,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
-  // if (process.env.NODE_ENV === 'production') {
-  //   notFound();
-  // }
+  if (process.env.NODE_ENV === 'production') {
+    notFound();
+  }
 
   const resolvedParams = await params;
   const post = getPostBySlug(resolvedParams.slug);

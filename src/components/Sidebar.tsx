@@ -89,7 +89,7 @@ export function Sidebar() {
       <div className="mt-8 flex flex-col gap-8 md:mt-0">
         <div className="flex flex-wrap gap-x-4 gap-y-2 md:flex-col md:items-start md:gap-4">
           <a
-            href="https://drive.google.com/drive/folders/1x3ZKJHRNT0e8wsiKVowoRuEhHSvtFbO2?usp=sharing"
+            href="https://drive.google.com/file/d/1R7eeENX-EpzAkzRdBnwCu1NpQhrE99ws/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
             aria-label="About Me (opens in a new tab)"

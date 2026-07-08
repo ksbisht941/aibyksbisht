@@ -97,7 +97,7 @@ export default function RootLayout({
           <LayoutWrapper>
             {children}
           </LayoutWrapper>
-          <ChatWidget />
+          {process.env.NODE_ENV !== 'production' && <ChatWidget />}
         </PostHogProvider>
       </body>
     </html>

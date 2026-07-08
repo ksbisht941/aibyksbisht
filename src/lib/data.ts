@@ -82,15 +82,6 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/ksbisht941/pytorch-projects/tree/main/rice-type-classification",
     thumbnail: "/projects/rice-type.png",
   },
-  // {
-  //   id: "whatsapp-chat-history",
-  //   title: "What Your Chat History Says About You",
-  //   shortDescription:
-  //     "Exploratory analysis of WhatsApp chat data — surfacing patterns in messaging frequency, sentiment, and activity over time.",
-  //   techStack: ["Python", "Data Analysis", "NLP"],
-  //   githubUrl: "https://github.com/ksbisht941/pytorch-projects/whatsapp-chat-history",
-  //   thumbnail: "/projects/whatsapp-chat.png",
-  // },
   {
     id: "price-prediction-ml-models",
     title: "Forecasting Numbers That Move",
@@ -110,6 +101,16 @@ export const projects: Project[] = [
     thumbnail: "/projects/v2f-travel.png",
   },
 ];
+
+// {
+//   id: "whatsapp-chat-history",
+//   title: "What Your Chat History Says About You",
+//   shortDescription:
+//     "Exploratory analysis of WhatsApp chat data — surfacing patterns in messaging frequency, sentiment, and activity over time.",
+//   techStack: ["Python", "Data Analysis", "NLP"],
+//   githubUrl: "https://github.com/ksbisht941/pytorch-projects/whatsapp-chat-history",
+//   thumbnail: "/projects/whatsapp-chat.png",
+// },
 
 export interface Experience {
   id: string;
